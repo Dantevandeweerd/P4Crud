@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/Style/style.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
     <nav>
-      <img src="assets/img/logo.png" id="header-logo" alt="logo" />
+      <a href="index.php"
+        ><img src="assets/img/logo.png" id="header-logo" alt="logo"
+      /></a>
       <img src="assets/img/vliegtuig.png" alt="vliegtuig" />
       <div class="header-buttons">
-        <button>Locaties</button>
-        <button>Over</button>
-        <button>Contact</button>
-        <button>Mijn D&A</button>
+        <a href=""><button>Locaties</button></a>
+        <a href=""><button>Over</button></a>
+        <a href=""><button>Contact</button></a>
+        <a href=""><button>Mijn D&A</button></a>
       </div>
     </nav>
   </body>
