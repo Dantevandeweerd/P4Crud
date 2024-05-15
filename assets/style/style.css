@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  background-color: #b1f5ab;
+  width: 100%;
+  height: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#header-logo {
+  position: relative;
+  right: 135px;
+}
+.header-buttons button {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 5px 0 5px;
+  color: #0D9945;
+}
+.header-buttons button:hover{
+    color: #13c55a;
+    transition: 0.4s;
+    font-size: 20px;
+}
