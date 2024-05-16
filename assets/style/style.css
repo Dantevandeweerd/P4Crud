@@ -10,6 +10,9 @@
 h1 {
   font-size: 23px;
 }
+h2{
+  font-size: 20px;
+}
 h3 {
   font-size: 15px;
 }
@@ -46,6 +49,88 @@ nav {
   color: #13c55a;
   transition: 0.4s;
   font-size: 20px;
+}
+
+
+
+/* Stijl van de landingpage */
+
+#landingpagefoto{
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+.boeking{
+  position: relative;
+  bottom: 150px;
+  left: 150px;
+  z-index: 2;
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  gap: 15px;
+}
+.boeking input{
+  padding: 10px;
+  border: solid 2px black;
+}
+#boeking-resultaat{
+  background-color: #ABF5BF;
+  color: #0D9945;
+  border: none;
+}
+
+.boeking-blok{
+  width: 600px;
+  height: 200px;
+  box-shadow: .2px 0 1em .02em rgb(0 0 0 / 30%);
+  display: flex;
+  flex-direction: row;
+}
+.boeking-blok:hover{
+  box-shadow: .2px 0 1em .3em rgb(0 0 0 / 30%);
+  transition: 0.5s;
+}
+.vakantie-locaties {
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+.vakantie-naam{
+  width: 400px;
+  padding: 10px;
+}
+.vakantie-bestemming,
+.verborgen-kosten {
+  color: rgba(0, 0, 0, 0.24); 
+}
+.vakantie-bestemming{
+  padding-top: 3px;
+}
+#info{
+  position: relative;
+  top: 5px;
+  left: 3px;
+}
+.prijs{
+  font-size: 24px;
+  font-weight: 500;
+}
+.kosten{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  top: 55px;
+}
+.hotel{
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Stijl van de footer */
