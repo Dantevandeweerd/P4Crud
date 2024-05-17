@@ -10,15 +10,19 @@
 h1 {
   font-size: 23px;
 }
-h2{
+
+h2 {
   font-size: 20px;
 }
+
 h3 {
   font-size: 15px;
 }
+
 p {
   font-size: 15px;
 }
+
 /* nav geeft de stijl aan hoe de header eruit ziet */
 nav {
   background-color: #b1f5ab;
@@ -29,10 +33,10 @@ nav {
   justify-content: space-around;
 }
 
-#header-logo {
+/* #header-logo {
   position: relative;
   right: 119px;
-}
+} */
 
 /* Geef de stijl van de knoppen */
 .header-buttons button {
@@ -43,7 +47,8 @@ nav {
   padding: 0 5px 0 5px;
   color: #0d9945;
 }
-.sidenav{
+
+.sidenav {
   display: none;
 }
 
@@ -54,83 +59,110 @@ nav {
   font-size: 20px;
 }
 
+.nav-button {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 
 
 /* Stijl van de landingpage */
 
-#landingpagefoto{
-  width: 100%;
-  height: 400px;
+#landingpagefoto {
+  width: 1900px;
+  height: 500px;
   z-index: 1;
 }
-.boeking{
+
+.boeking {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boeking-form {
   position: relative;
-  bottom: 150px;
-  left: 150px;
+  bottom: 250px;
   z-index: 2;
   background-color: white;
-  width: 80%;
+  width: 62%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 7px;
   gap: 15px;
+  border-radius: 8px;
 }
-.boeking input{
+
+.boeking-form input {
   padding: 10px;
-  border: solid 2px black;
+  border: solid 0.5px black;
 }
-#boeking-resultaat{
+
+#boeking-resultaat {
   background-color: #ABF5BF;
   color: #0D9945;
   border: none;
 }
 
-.boeking-blok{
+.boeking-blok {
   width: 600px;
   height: 200px;
   box-shadow: .2px 0 1em .02em rgb(0 0 0 / 30%);
   display: flex;
   flex-direction: row;
 }
-.boeking-blok:hover{
+
+.boeking-blok:hover {
   box-shadow: .2px 0 1em .3em rgb(0 0 0 / 30%);
   transition: 0.5s;
 }
+
 .vakantie-locaties {
   padding-bottom: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
+  position: relative;
+  z-index: 3;
 }
-.vakantie-naam{
+
+.vakantie-naam {
   width: 400px;
   padding: 10px;
 }
+
 .vakantie-bestemming,
 .verborgen-kosten {
-  color: rgba(0, 0, 0, 0.24); 
+  color: rgba(0, 0, 0, 0.24);
 }
-.vakantie-bestemming{
+
+.vakantie-bestemming {
   padding-top: 3px;
 }
-#info{
+
+#info {
   position: relative;
   top: 5px;
   left: 3px;
 }
-.prijs{
+
+.prijs {
   font-size: 24px;
   font-weight: 500;
 }
-.kosten{
+
+.kosten {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: relative;
   top: 55px;
 }
-.hotel{
+
+.hotel {
   gap: 25px;
   display: flex;
   flex-direction: column;
@@ -165,28 +197,34 @@ nav {
   color: #0d9945;
   font-weight: 600;
 }
+
 .footer-algemeen p {
   color: #0d9945;
 }
+
 #footer-openingstijden {
   display: flex;
   margin-top: 15px;
   flex-direction: column;
 }
+
 #vragen-en-contact {
   display: flex;
   margin-bottom: 4px;
 }
 
-.socialmedia, .betaal {
+.socialmedia,
+.betaal {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
 .socialmedia img,
 .betaal img {
   width: 30px;
 }
+
 .socialmedia-info,
 .betaal-info {
   display: flex;
@@ -195,14 +233,18 @@ nav {
   gap: 15px;
 }
 
+
+
 @media only screen and (max-width: 600px) {
-  #vliegtuig{
+  #vliegtuig {
     display: none
   }
-  #header-logo{
+
+  #header-logo {
     width: 193px;
     right: 28px;
   }
+
   .sidenav {
     height: 207px;
     width: 0;
@@ -216,7 +258,7 @@ nav {
     padding-top: 60px;
     border-radius: 12px;
   }
-  
+
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -225,11 +267,11 @@ nav {
     display: block;
     transition: 0.3s;
   }
-  
+
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  
+
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -237,12 +279,15 @@ nav {
     font-size: 36px;
     margin-left: 50px;
   }
+
   .header-buttons {
     display: none;
   }
-  .sidenav{
+
+  .sidenav {
     display: block;
   }
+
   .sidenav button {
     border: none;
     background-color: transparent;
@@ -251,14 +296,18 @@ nav {
     padding: 0 5px 0 5px;
     color: #0d9945;
   }
+
   .sidenav button:hover {
     color: #13c55a;
     transition: 0.4s;
     font-size: 20px;
   }
-  .boeking{
-    height: 500px;
+
+  .nav-button {
+    display: block;
   }
-  
-  
+
+  .boeking-form {
+    min-width: 365px;
+  }
 }

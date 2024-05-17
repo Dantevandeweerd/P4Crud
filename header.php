@@ -25,7 +25,7 @@
         <a href=""><button>Contact test</button></a>
         <a href=""><button>Mijn D&A</button></a>
       </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span class="nav-button" onclick="openNav()">&#9776;</span>
 
       <script src="assets/javascript/script.js"></script>
 

@@ -13,15 +13,15 @@
     <main>
       <?php include 'header.php'?>
       <section>
-        <div>
+        <div class="boeking">
           <img
             src="assets/img/landingpagefoto.png"
             alt="landingpagefoto"
             id="landingpagefoto" />
-          <form action="" class="boeking">
+          <form action="" class="boeking-form">
             <input type="text" placeholder="Bestemming" />
-            <input type="date" name="" id="" />
-            <input type="date" name="" id="" />
+            <input type="date" name="" id="vertekdatum" />
+            <input type="date" name="" id="einddatum" />
             <input type="text" placeholder="kamer(s), Reizigers" />
             <input type="text" placeholder="Luchthaven" />
             <input
