@@ -31,7 +31,7 @@ nav {
 
 #header-logo {
   position: relative;
-  right: 135px;
+  right: 119px;
 }
 
 /* Geef de stijl van de knoppen */
@@ -42,6 +42,9 @@ nav {
   font-weight: 600;
   padding: 0 5px 0 5px;
   color: #0d9945;
+}
+.sidenav{
+  display: none;
 }
 
 /* Als je er maakt die een verandering */
@@ -190,4 +193,72 @@ nav {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #vliegtuig{
+    display: none
+  }
+  #header-logo{
+    width: 193px;
+    right: 28px;
+  }
+  .sidenav {
+    height: 207px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 164px;
+    left: 82px;
+    background-color: #18e168;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 12px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .header-buttons {
+    display: none;
+  }
+  .sidenav{
+    display: block;
+  }
+  .sidenav button {
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 5px 0 5px;
+    color: #0d9945;
+  }
+  .sidenav button:hover {
+    color: #13c55a;
+    transition: 0.4s;
+    font-size: 20px;
+  }
+  .boeking{
+    height: 500px;
+  }
+  
+  
 }
