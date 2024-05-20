@@ -249,7 +249,7 @@ nav {
     height: 207px;
     width: 0;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     top: 164px;
     left: 82px;
     background-color: #18e168;
@@ -309,5 +309,8 @@ nav {
 
   .boeking-form {
     min-width: 365px;
+  }
+  #hotel-slide2{
+    display: none;
   }
 }

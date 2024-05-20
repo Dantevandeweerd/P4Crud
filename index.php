@@ -33,7 +33,65 @@
       </section>
 
       <section class="vakantie-locaties">
-        <div class="hotel">
+        <button class="prev active" id="showslide1-button" onclick="showSlide1()">❮</button>
+
+        <div class="hotel" id="hotel-slide1">
+          <div class="boeking-blok">
+            <div class="vakantie-foto">
+              <img src="assets/img/doryssa.png" alt="doryssa" />
+            </div>
+            <div class="vakantie-naam">
+              <img src="assets/img/4ster.png" alt="4ster" />
+              <h2>Appartementen Doryssa Coast</h2>
+              <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
+              <div class="kosten">
+                <p>
+                  vanafprijs p.p
+                  <img id="info" src="assets/img/info.png" alt="info" />
+                </p>
+                <p class="prijs">testpagina</p>
+                <p class="verborgen-kosten">*Geen verborgen kosten</p>
+              </div>
+            </div>
+          </div>
+          <div class="boeking-blok">
+            <div class="vakantie-foto">
+              <img src="assets/img/doryssa.png" alt="doryssa" />
+            </div>
+            <div class="vakantie-naam">
+              <img src="assets/img/4ster.png" alt="4ster" />
+              <h2>Appartementen Doryssa Coast</h2>
+              <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
+              <div class="kosten">
+                <p>
+                  vanafprijs p.p
+                  <img id="info" src="assets/img/info.png" alt="info" />
+                </p>
+                <p class="prijs">€ 865</p>
+                <p class="verborgen-kosten">*Geen verborgen kosten</p>
+              </div>
+            </div>
+          </div>
+          <div class="boeking-blok">
+            <div class="vakantie-foto">
+              <img src="assets/img/doryssa.png" alt="doryssa" />
+            </div>
+            <div class="vakantie-naam">
+              <img src="assets/img/4ster.png" alt="4ster" />
+              <h2>Appartementen Doryssa Coast</h2>
+              <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
+              <div class="kosten">
+                <p>
+                  vanafprijs p.p
+                  <img id="info" src="assets/img/info.png" alt="info" />
+                </p>
+                <p class="prijs">€ 865</p>
+                <p class="verborgen-kosten">*Geen verborgen kosten</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hotel active" id="hotel-slide2">
           <div class="boeking-blok">
             <div class="vakantie-foto">
               <img src="assets/img/doryssa.png" alt="doryssa" />
@@ -89,64 +147,10 @@
             </div>
           </div>
         </div>
-        <div class="hotel">
-          <div class="boeking-blok">
-            <div class="vakantie-foto">
-              <img src="assets/img/doryssa.png" alt="doryssa" />
-            </div>
-            <div class="vakantie-naam">
-              <img src="assets/img/4ster.png" alt="4ster" />
-              <h2>Appartementen Doryssa Coast</h2>
-              <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
-              <div class="kosten">
-                <p>
-                  vanafprijs p.p
-                  <img id="info" src="assets/img/info.png" alt="info" />
-                </p>
-                <p class="prijs">€ 865</p>
-                <p class="verborgen-kosten">*Geen verborgen kosten</p>
-              </div>
-            </div>
-          </div>
-          <div class="boeking-blok">
-            <div class="vakantie-foto">
-              <img src="assets/img/doryssa.png" alt="doryssa" />
-            </div>
-            <div class="vakantie-naam">
-              <img src="assets/img/4ster.png" alt="4ster" />
-              <h2>Appartementen Doryssa Coast</h2>
-              <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
-              <div class="kosten">
-                <p>
-                  vanafprijs p.p
-                  <img id="info" src="assets/img/info.png" alt="info" />
-                </p>
-                <p class="prijs">€ 865</p>
-                <p class="verborgen-kosten">*Geen verborgen kosten</p>
-              </div>
-            </div>
-          </div>
-          <div class="boeking-blok">
-            <div class="vakantie-foto">
-              <img src="assets/img/doryssa.png" alt="doryssa" />
-            </div>
-            <div class="vakantie-naam">
-              <img src="assets/img/4ster.png" alt="4ster" />
-              <h2>Appartementen Doryssa Coast</h2>
-              <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
-              <div class="kosten">
-                <p>
-                  vanafprijs p.p
-                  <img id="info" src="assets/img/info.png" alt="info" />
-                </p>
-                <p class="prijs">€ 865</p>
-                <p class="verborgen-kosten">*Geen verborgen kosten</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button class="next" id="showslide2-button" onclick="showSlide2()">❯</button>
       </section>
       <?php include 'footer.php'?>
     </main>
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>
