@@ -10,7 +10,7 @@
 h1 {
   font-size: 23px;
 }
-h2{
+h2 {
   font-size: 20px;
 }
 h3 {
@@ -51,16 +51,14 @@ nav {
   font-size: 20px;
 }
 
-
-
 /* Stijl van de landingpage */
 
-#landingpagefoto{
+#landingpagefoto {
   width: 100%;
   height: 400px;
   z-index: 1;
 }
-.boeking{
+.boeking {
   position: relative;
   bottom: 150px;
   left: 150px;
@@ -72,25 +70,25 @@ nav {
   padding: 7px;
   gap: 15px;
 }
-.boeking input{
+.boeking input {
   padding: 10px;
   border: solid 2px black;
 }
-#boeking-resultaat{
-  background-color: #ABF5BF;
-  color: #0D9945;
+#boeking-resultaat {
+  background-color: #abf5bf;
+  color: #0d9945;
   border: none;
 }
 
-.boeking-blok{
+.boeking-blok {
   width: 600px;
   height: 200px;
-  box-shadow: .2px 0 1em .02em rgb(0 0 0 / 30%);
+  box-shadow: 0.2px 0 1em 0.02em rgb(0 0 0 / 30%);
   display: flex;
   flex-direction: row;
 }
-.boeking-blok:hover{
-  box-shadow: .2px 0 1em .3em rgb(0 0 0 / 30%);
+.boeking-blok:hover {
+  box-shadow: 0.2px 0 1em 0.3em rgb(0 0 0 / 30%);
   transition: 0.5s;
 }
 .vakantie-locaties {
@@ -100,41 +98,87 @@ nav {
   justify-content: center;
   gap: 50px;
 }
-.vakantie-naam{
+.vakantie-naam {
   width: 400px;
   padding: 10px;
 }
 .vakantie-bestemming,
 .verborgen-kosten {
-  color: rgba(0, 0, 0, 0.24); 
+  color: rgba(0, 0, 0, 0.24);
 }
-.vakantie-bestemming{
+.vakantie-bestemming {
   padding-top: 3px;
 }
-#info{
+#info {
   position: relative;
   top: 5px;
   left: 3px;
 }
-.prijs{
+.prijs {
   font-size: 24px;
   font-weight: 500;
 }
-.kosten{
+.kosten {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: relative;
   top: 55px;
 }
-.hotel{
+.hotel {
   gap: 25px;
   display: flex;
   flex-direction: column;
 }
 
-/* Stijl van de footer */
+/* stijl inlog pagina */
+#inlog-achtergrond {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+div form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#inlog-logo {
+  height: 125px;
+  width: 125px;
+}
+#inlog-form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 10px;
+}
+div h2 {
+  text-align: center;
+  padding: 20px;
+}
+div h3 {
+  position: relative;
+  left: 200px;
+}
 
+#inlog-form {
+  width: 500px;
+  height: 600px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  bottom: 155px;
+}
+.inlog-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stijl van de footer */
 
 .footer-voorwaarden {
   width: 100%;
@@ -175,7 +219,8 @@ nav {
   margin-bottom: 4px;
 }
 
-.socialmedia, .betaal {
+.socialmedia,
+.betaal {
   display: flex;
   flex-direction: column;
   gap: 5px;
