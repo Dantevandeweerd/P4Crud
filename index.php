@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="assets/style/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
 
   <body>
@@ -19,8 +18,7 @@
           <img
             src="assets/img/landingpagefoto.png"
             alt="landingpagefoto"
-            id="landingpagefoto"
-          />
+            id="landingpagefoto" />
           <form action="" class="boeking-form">
             <input type="text" placeholder="Bestemming" />
             <input type="date" name="" id="vertekdatum" />
@@ -30,8 +28,7 @@
             <input
               type="submit"
               value="Bekijk resultaten"
-              id="boeking-resultaat"
-            />
+              id="boeking-resultaat" />
           </form>
         </div>
       </section>
@@ -40,19 +37,24 @@
         <button
           class="prev active"
           id="showslide1-button"
-          onclick="showSlide1()"
-        >
+          onclick="showSlide1()">
           ❮
         </button>
 
         <div class="hotel" id="hotel-slide1">
           <div class="boeking-blok">
             <div class="vakantie-foto">
-              <img class="boeking-foto" src="assets/img/doryssa.png" alt="doryssa" />
+              <img
+                class="boeking-foto"
+                src="assets/img/doryssa.png"
+                alt="doryssa" />
             </div>
             <div class="vakantie-container">
               <div class="vakantie-naam">
-                <img src="assets/img/4ster.png" alt="4ster" />
+                <img
+                  class="ster-boeking"
+                  src="assets/img/4ster.png"
+                  alt="4ster" />
                 <h2>Appartementen Doryssa Coast</h2>
                 <p class="vakantie-bestemming">Griekenland Samos Pythagorion</p>
               </div>
@@ -68,7 +70,10 @@
           </div>
           <div class="boeking-blok">
             <div class="vakantie-foto">
-              <img class="boeking-foto" src="assets/img/doryssa.png" alt="doryssa" />
+              <img
+                class="boeking-foto"
+                src="assets/img/doryssa.png"
+                alt="doryssa" />
             </div>
             <div class="vakantie-container">
               <div class="vakantie-naam">
@@ -88,7 +93,10 @@
           </div>
           <div class="boeking-blok">
             <div class="vakantie-foto">
-              <img class="boeking-foto" src="assets/img/doryssa.png" alt="doryssa" />
+              <img
+                class="boeking-foto"
+                src="assets/img/doryssa.png"
+                alt="doryssa" />
             </div>
             <div class="vakantie-container">
               <div class="vakantie-naam">
@@ -110,7 +118,10 @@
         <div class="hotel active" id="hotel-slide2">
           <div class="boeking-blok">
             <div class="vakantie-foto">
-              <img class="boeking-foto" src="assets/img/doryssa.png" alt="doryssa" />
+              <img
+                class="boeking-foto"
+                src="assets/img/doryssa.png"
+                alt="doryssa" />
             </div>
             <div class="vakantie-container">
               <div class="vakantie-naam">
@@ -130,7 +141,10 @@
           </div>
           <div class="boeking-blok">
             <div class="vakantie-foto">
-              <img class="boeking-foto" src="assets/img/doryssa.png" alt="doryssa" />
+              <img
+                class="boeking-foto"
+                src="assets/img/doryssa.png"
+                alt="doryssa" />
             </div>
             <div class="vakantie-container">
               <div class="vakantie-naam">
@@ -150,7 +164,10 @@
           </div>
           <div class="boeking-blok">
             <div class="vakantie-foto">
-              <img class="boeking-foto" src="assets/img/doryssa.png" alt="doryssa" />
+              <img
+                class="boeking-foto"
+                src="assets/img/doryssa.png"
+                alt="doryssa" />
             </div>
             <div class="vakantie-container">
               <div class="vakantie-naam">

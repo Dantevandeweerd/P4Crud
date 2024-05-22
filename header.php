@@ -16,14 +16,14 @@
         <a href=""><button>Locaties</button></a>
         <a href=""><button>Over</button></a>
         <a href=""><button>Contact</button></a>
-        <a href=""><button>Mijn D&A</button></a>
+        <a href="mijnd&a.php"><button>Mijn D&A</button></a>
       </div>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href=""><button>Locaties</button></a>
         <a href=""><button>Over</button></a>
         <a href=""><button>Contact test</button></a>
-        <a href=""><button>Mijn D&A</button></a>
+        <a href="mijnd&a.php"><button>Mijn D&A</button></a>
       </div>
       <span class="nav-button" onclick="openNav()">&#9776;</span>
 
