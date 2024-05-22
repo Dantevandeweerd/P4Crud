@@ -68,7 +68,6 @@ nav {
 /* Stijl van de landingpage */
 
 #landingpagefoto {
-#landingpagefoto {
   width: 100%;
   height: 500px;
   z-index: 1;
@@ -222,140 +221,129 @@ nav {
 
 .socialmedia,
 .betaal {
-.socialmedia,
-.betaal {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.socialmedia img,
-.betaal img {
-  width: 30px;
-}
-
-.socialmedia-info,
-.betaal-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-}
-
-@media only screen and (max-width: 600px) {
-  #vliegtuig {
-    display: none;
-  }
-
-  #header-logo {
-    width: 193px;
-    right: 28px;
-  }
-
-  .sidenav {
-    height: 207px;
-    width: 0;
-    position: relative;
-    z-index: 3;
-    top: 164px;
-    left: 82px;
-    background-color: #18e168;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    border-radius: 12px;
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .header-buttons {
-    display: none;
-  }
-
-  .sidenav {
-    display: block;
-  }
-
-  .sidenav button {
-    border: none;
-    background-color: transparent;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 0 5px 0 5px;
-    color: #0d9945;
-  }
-
-  .sidenav button:hover {
-    color: #13c55a;
-    transition: 0.4s;
-    font-size: 20px;
-  }
-
-  .nav-button {
-    display: block;
-  }
-
-  .boeking-form {
-    min-width: 365px;
-  }
-  .footer-algemeen {
+  .socialmedia,
+  .betaal {
+    display: flex;
     flex-direction: column;
-    align-items: baseline;
-    height: fit-content;
+    gap: 5px;
   }
-}
-@media only screen and (max-width: 960px) {
-  #hotel-slide2 {
-    display: none;
+
+  .socialmedia img,
+  .betaal img {
+    width: 30px;
   }
-  .next {
+
+  .socialmedia-info,
+  .betaal-info {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
   }
-  .hotel {
-    display: flex;
+
+  @media only screen and (max-width: 600px) {
+    #vliegtuig {
+      display: none;
+    }
+
+    #header-logo {
+      width: 193px;
+      right: 28px;
+    }
+
+    .sidenav {
+      height: 207px;
+      width: 0;
+      position: relative;
+      z-index: 3;
+      top: 164px;
+      left: 82px;
+      background-color: #18e168;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      border-radius: 12px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .header-buttons {
+      display: none;
+    }
+
+    .sidenav {
+      display: block;
+    }
+
+    .sidenav button {
+      border: none;
+      background-color: transparent;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 0 5px 0 5px;
+      color: #0d9945;
+    }
+
+    .sidenav button:hover {
+      color: #13c55a;
+      transition: 0.4s;
+      font-size: 20px;
+    }
+
+    .nav-button {
+      display: block;
+    }
+
+    .boeking-form {
+      min-width: 365px;
+    }
+    .footer-algemeen {
+      flex-direction: column;
+      align-items: baseline;
+      height: fit-content;
+    }
   }
-}
-@media only screen and (min-width: 960px) {
-  #hotel-slide2 {
-    display: flex;
+  @media only screen and (max-width: 960px) {
+    #hotel-slide2 {
+      display: none;
+    }
+    .next {
+      display: flex;
+    }
+    .hotel {
+      display: flex;
+    }
   }
-  .next,
-  .prev {
-    display: none;
-  }
-  .hotel {
-    display: flex;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .next {
-    position: relative;
-    right: 23px;
-  }
-  .prev {
-    position: relative;
-    left: 23px;
-  }
-  .vakantie-locaties {
-    gap: 0;
+  @media only screen and (max-width: 500px) {
+    .next {
+      position: relative;
+      right: 23px;
+    }
+    .prev {
+      position: relative;
+      left: 23px;
+    }
+    .vakantie-locaties {
+      gap: 0;
+    }
   }
 }
