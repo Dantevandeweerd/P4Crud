@@ -68,6 +68,7 @@ nav {
 /* Stijl van de landingpage */
 
 #landingpagefoto {
+#landingpagefoto {
   width: 100%;
   height: 500px;
   z-index: 1;
@@ -174,16 +175,6 @@ nav {
   flex-direction: column;
 }
 
-.prev,
-.next {
-  display: none;
-  height: 60px;
-  min-width: 30px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: rgb(128, 128, 128, 80%);
-}
 /* Stijl van de footer */
 
 .footer-voorwaarden {
@@ -229,6 +220,8 @@ nav {
   margin-bottom: 4px;
 }
 
+.socialmedia,
+.betaal {
 .socialmedia,
 .betaal {
   display: flex;
