@@ -194,35 +194,52 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 25px;
+}
+.register-form input{
+  padding-left: 15px;
 }
 #inlog-logo {
   height: 125px;
   width: 125px;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 #inlog-form input {
   width: 400px;
   height: 45px;
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); 
   border-radius: 10px;
 }
 #inlog-form h2 {
   text-align: center;
   padding: 20px;
 }
-#inlog-form h3 {
-  position: relative;
-  left: 200px;
+.wachtwoord-vergeten {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+.wachtwoord-vergeten button {
+  color: blue;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 #inlog-form {
   width: 500px;
   height: 600px;
-  background-color: green;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   position: relative;
   bottom: 155px;
+  border: solid 0.5px black;
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); 
+
 }
 .inlog-container {
   width: 100%;
@@ -230,6 +247,23 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+#register-link button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#register-link {
+  display: flex;
+  justify-content: flex-end;
+}
+.inloggen{
+  padding: 20px 0 15px 0;
+}
+#Creëer{
+  color: blue;
+}
+
+
 
 /* Stijl van de footer */
 
