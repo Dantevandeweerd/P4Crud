@@ -65,12 +65,10 @@
                         </h2>
                         <form action="" class="contact-formulier">
                             <input type="text" id="E-mail" placeholder="E-mailadres" />
-                            <input type="password" id="onderwerp" placeholder="Wachtwoord" />
-                            <textarea name="" id="Bericht"></textarea>
+                            <input type="password" id="onderwerp" placeholder="Onderwerp" />
+                            <textarea name="" id="Bericht" placeholder="Bericht"></textarea>
+                            <input type="submit" id="bericht" value="Verzenden" />  
                         </form>
-                        <div class="inloggen">
-                            <input type="submit" id="versturen" value="Inloggen" />
-                        </div>
                     </div>
                 </div>
             </div>

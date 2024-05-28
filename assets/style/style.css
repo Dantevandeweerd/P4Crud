@@ -318,15 +318,57 @@ nav {
 }
 #contact-form {
   width: 500px;
-  height: 600px;
+  height: 670px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   position: relative;
-  border: solid 0.5px black;
+  box-shadow: 0 5px 13px -2px rgba(0, 0, 0, 0.2);
+}
+#contact-form h1 {
+  padding-bottom: 8px;
+}
+
+.contact-formulier {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  width: 74%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7px;
+  gap: 15px;
+  border-radius: 8px;
+}
+
+.contact-formulier input {
+  width: 400px;
+  height: 45px;
   box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+}
+.contact-formulier textarea {
+  width: 400px;
+  height: 155px;
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  resize: none;
+  padding: 15px;
+}
+.contact-formulier #bericht {
+  background-color: #B1F5AB;
+  width: 370px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 28px;
+  cursor: pointer;
+}
+#Bericht {
+  margin-bottom: 15px; /* Adjust the value as needed */
 }
 
 /* Stijl van de footer */
