@@ -21,8 +21,7 @@
             id="landingpagefoto" />
           <form action="" class="boeking-form">
             <input type="text" placeholder="Bestemming" />
-            <input type="date" name="" id="vertekdatum" />
-            <input type="date" name="" id="einddatum" />
+            <input type="text" name="daterange"  />
             <input type="text" placeholder="kamer(s), Reizigers" />
             <input type="text" placeholder="Luchthaven" />
             <input
@@ -193,5 +192,14 @@
       <?php include 'footer.php' ?>
     </main>
     <script src="assets/javascript/script.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   </body>
 </html>
