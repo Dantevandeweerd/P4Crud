@@ -1,36 +1,32 @@
 <script>
 function wachtwoordChecker() {
-    var wachtwoord = document.getElementById("wachtwoord").value;
-    var bevestig = document.getElementById("bevestig-wachtwoord").value
+    const wachtwoord = document.getElementById("wachtwoord").value;
+    const bevestig = document.getElementById("bevestig-wachtwoord").value
 
-    var minLengte = /.{8,}/;
-    var hooftletter = /[A-Z]/;
-    var cijfer = /\d/;
-    var specialetekens = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+    const minLengte = /.{8,}/;
+    const hooftletter = /[A-Z]/;
+    const cijfer = /\d/;
+    const specialetekens = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
 
-    var isminLengte = minLengte.test(wachtwoord);
-    var hfhooftletter = hooftletter.test(wachtwoord);
-    var hfcijfer = cijfer.test(wachtwoord);
-    var hfspecialetekens = specialetekens.test(wachtwoord);
-    var zelfdeCheck = wachtword === bevestig
-    // if(!zelfdeCheck){
-    //   alert("wacht is niet het zelfde")
-    // }
+    const isminLengte = minLengte.test(wachtwoord);
+    const hfhooftletter = hooftletter.test(wachtwoord);
+    const hfcijfer = cijfer.test(wachtwoord);
+    const hfspecialetekens = specialetekens.test(wachtwoord);
+    const zelfdeCheck = wachtwoord === bevestig
 
-    return isminLengte && hfhooftletter && hfcijfer && hfspecialetekens;
+    return isminLengte && hfhooftletter && hfcijfer && hfspecialetekens && zelfdeCheck;
 }
 
 function wachtwoordvalidatie() {
-    var isValid = wachtwoordChecker();
-    alert("Wachtword heeft niet alle eisen");
-    if (isValid) {
-        alert("Wachtword heeft niet alle eisen");
+    const isValid = wachtwoordChecker();
+    if (!isValid) {
+        alert("Wachtword heeft niet alle eisen of wachtwoord is niet het zelfde");
+    }
+    else{
+        alert("mooi")
     }
 
-}
-function poep(){
-    alert("Wachtword heeft niet alle eisen");
 }
 </script>
 
