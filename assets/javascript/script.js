@@ -56,7 +56,7 @@ function wachtwoordChecker() {
   var hfhooftletter = hooftletter.test(wachtword);
   var hfcijfer = cijfer.test(wachtword);
   var hfspecialetekens = specialetekens.test(wachtword);
-  var zelfdeCheck = wachtword === bevestig;
+  var zelfdeCheck = wachtwoord === bevestig;
   if (!zelfdeCheck) {
     alert("wacht is niet het zelfde");
   }
