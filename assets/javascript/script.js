@@ -18,3 +18,15 @@ function showSlide2() {
   document.getElementById("showslide1-button").style.display = "flex";
   document.getElementById("showslide2-button").style.display = "none";
 }
+
+function inlogCheck() {
+  var email = document.getElementById("email").value;
+  var wachtwoord = document.getElementById("wachtwoord").value;
+
+  if (email === "" || wachtwoord === "") {
+    alert("Vul alstublieft alle velden in.");
+    return false;
+  }
+
+  return true;
+}

@@ -220,6 +220,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   width: 80%;
+  padding-bottom: 20px;
 }
 .wachtwoord-vergeten button {
   color: blue;
@@ -259,7 +260,16 @@ nav {
   justify-content: flex-end;
 }
 .inloggen {
-  padding: 20px 0 15px 0;
+  padding: 0px 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inloggen input{
+  background-color: #B1F5AB;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
 }
 #Creëer {
   color: blue;
@@ -360,7 +370,7 @@ nav {
   padding: 15px;
 }
 .contact-formulier #bericht {
-  background-color: #B1F5AB;
+  background-color: #b1f5ab;
   width: 370px;
   height: 50px;
   border-radius: 5px;
