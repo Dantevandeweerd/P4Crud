@@ -30,3 +30,15 @@ function inlogCheck() {
 
   return true;
 }
+function registerCheck(){
+  var email = document.getElementById("emial").value;
+  var wachtwoord = document.getElementById("wachtwoord").value;
+  var bevesting = document.getElementById("bevestig-wachtwoord").value;
+
+  if (email === "" || wachtwoord === "" || bevesting === "") {
+    alert("Vul alstublieft alle velden in.");
+    return false;
+  }
+
+  return true;
+}

@@ -17,33 +17,37 @@
         alt="achtergrond"
         id="inlog-achtergrond" />
       <div class="inlog-container">
-        <div id="inlog-form">
+        <div class="register-blok">
           <img src="assets/img/logolos.png" alt="logolos" id="inlog-logo" />
           <h1>welkom bij mijn D&A</h1>
-          <h2>
-          Vul onderstaande gegevens in.
-          </h2>
-          <form action="" class="register-form">
+          <h2>Vul onderstaande gegevens in.</h2>
+          <form action="" class="register-form" onsubmit="">
             <input type="text" id="email" placeholder="E-mailadres" />
             <input type="password" id="wachtwoord" placeholder="Wachtwoord" />
-          </form>
-          <div class="wachtwoord-info">
-            <ul>
+            <div class="wachtwoord-info">
+              <ul>
                 <li>Minimaal 8 tekens</li>
                 <li>Cijfer</li>
-            </ul>
-            <ul>
+              </ul>
+              <ul>
                 <li>Speciale karaktes</li>
                 <li>Grote letter</li>
-            </ul>
-          </div>
-          <div class="register">
-            <input type="text" id="bevestig-wachtwoord" placeholder="Bevestig Wachtwoord">
-            <input type="submit" id="versturen" value="Account Creëer" />
-          </div>
+              </ul>
+            </div>
+            <div class="register">
+              <input
+                type="text"
+                id="bevestig-wachtwoord"
+                placeholder="Bevestig Wachtwoord" />
+              <input type="submit" id="versturen" value="Account Creëer" />
+            </div>
+          </form>
+
           <div id="login-link">
             <a href="mijnd&a.php"
-              ><button>Al een account? <span id="Creëer">inloggen</span></button></a
+              ><button>
+                Al een account? <span id="Creëer">inloggen</span>
+              </button></a
             >
           </div>
         </div>

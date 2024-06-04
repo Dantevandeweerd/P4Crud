@@ -17,7 +17,7 @@
         alt="achtergrond"
         id="inlog-achtergrond" />
       <div class="inlog-container">
-        <div id="inlog-form">
+        <div class="inlog-form">
           <img src="assets/img/logolos.png" alt="logolos" id="inlog-logo" />
           <h1>welkom bij mijn D&A</h1>
           <h2>
