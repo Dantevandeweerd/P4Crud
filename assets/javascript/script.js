@@ -44,33 +44,6 @@ function registerCheck() {
 }
 
 function wachtwoordChecker() {
-  var password = document.getElementById("wachtwoord").value;
-  var bevestig = document.getElementById("bevestig-wachtwoord").value;
-
-  var minLengte = /.{8,}/;
-  var hooftletter = /[A-Z]/;
-  var cijfer = /\d/;
-  var specialetekens = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
-
-  var isminLengte = minLengte.test(wachtword);
-  var hfhooftletter = hooftletter.test(wachtword);
-  var hfcijfer = cijfer.test(wachtword);
-  var hfspecialetekens = specialetekens.test(wachtword);
-  var zelfdeCheck = wachtwoord === bevestig;
-  if (!zelfdeCheck) {
-    alert("wacht is niet het zelfde");
-  }
-
-  return isminLengte && hfhooftletter && hfcijfer && hfspecialetekens;
-}
-
-function wachtwoordvalidatie() {
-  var isValid = wachtwoordChecker();
-  if (isValid) {
-    alert("Wachtword heeft niet alle eisen");
-  }
-}
-function wachtwoordChecker() {
   const wachtwoord = document.getElementById("wachtwoord").value;
   const bevestig = document.getElementById("bevestig-wachtwoord").value;
 

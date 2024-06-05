@@ -1,39 +1,35 @@
-<script>
-function wachtwoordChecker() {
-    const wachtwoord = document.getElementById("wachtwoord").value;
-    const bevestig = document.getElementById("bevestig-wachtwoord").value
+<?php
+session_start();
+include ('../connection.php');
 
-    const minLengte = /.{8,}/;
-    const hooftletter = /[A-Z]/;
-    const cijfer = /\d/;
-    const specialetekens = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $email = $_POST['email'];
+    $wachtwoord = $_POST['wachtwoord'];
+    $bevestig = $_POST['bevestig-wachtwoord'];
 
+    if (!empty($email) && !empty($wachtwoord) && !empty($bevestig) && $wachtwoord === $bevestig) {
+        // Kijkt of de email al bestaat
+        $sql = "SELECT COUNT(*) FROM users WHERE Email = :email";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        header("Location: ../mijnd&aregister.php");
+        $stmt->execute();
+        $count = $stmt->fetchColumn();
 
-    const isminLengte = minLengte.test(wachtwoord);
-    const hfhooftletter = hooftletter.test(wachtwoord);
-    const hfcijfer = cijfer.test(wachtwoord);
-    const hfspecialetekens = specialetekens.test(wachtwoord);
-    const zelfdeCheck = wachtwoord === bevestig
+        if ($count > 0) {
+            // Email bestaat al
+            $_SESSION['error'] = "Dit e-mailadres is al geregistreerd.";
+        } else {
+            // Nieuwe user wordt toegevoegd
+            $sql = "INSERT INTO users (Email, Wachtwoord) VALUES (:email, :wachtwoord)";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':wachtwoord', $wachtwoord);
+            header("Location: ../mijnd&aregister.php");
+            $stmt->execute();
 
-    return isminLengte && hfhooftletter && hfcijfer && hfspecialetekens && zelfdeCheck;
-}
-
-function wachtwoordvalidatie() {
-    const isValid = wachtwoordChecker();
-    if (!isValid) {
-        alert("Wachtword heeft niet alle eisen of wachtwoord is niet het zelfde");
+        }
+    } else {
+        $_SESSION['error'] = "Wachtwoord validatie mislukt of wachtwoord en bevestiging komen niet overeen.";
     }
-    else{
-        alert("mooi")
-    }
-
 }
-</script>
-
-<form>
-        <label for="password">Password:</label>
-        <input type="password" id="wachtwoord" name="wachtwoord"><br><br>
-        <input type="text" id="bevestig-wachtwoord" placeholder="Bevestig Wachtwoord" />
-        <button type="button" onclick="wachtwoordvalidatie()">Validate Password</button>
-        
-    </form>

@@ -331,6 +331,7 @@ nav {
 
 .contact-pagina {
   display: flex;
+  justify-content: space-evenly;
 }
 #contact-form {
   width: 500px;
