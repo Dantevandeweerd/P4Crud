@@ -69,5 +69,6 @@ function wachtwoordvalidatie() {
     alert("Wachtword heeft niet alle eisen of wachtwoord is niet het zelfde");
     return false;
   }
+  alert("Account aangemaakt!")
   return true;
 }
