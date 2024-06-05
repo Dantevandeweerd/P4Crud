@@ -44,19 +44,19 @@ function registerCheck() {
 }
 
 function wachtwoordChecker() {
-  const wachtwoord = document.getElementById("wachtwoord").value;
-  const bevestig = document.getElementById("bevestig-wachtwoord").value;
+  let  wachtwoord = document.getElementById("wachtwoord").value;
+  let bevestig = document.getElementById("bevestig-wachtwoord").value;
 
   const minLengte = /.{8,}/;
   const hooftletter = /[A-Z]/;
   const cijfer = /\d/;
   const specialetekens = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
-  const isminLengte = minLengte.test(wachtwoord);
-  const hfhooftletter = hooftletter.test(wachtwoord);
-  const hfcijfer = cijfer.test(wachtwoord);
-  const hfspecialetekens = specialetekens.test(wachtwoord);
-  const zelfdeCheck = wachtwoord === bevestig;
+  let isminLengte = minLengte.test(wachtwoord);
+  let hfhooftletter = hooftletter.test(wachtwoord);
+  let hfcijfer = cijfer.test(wachtwoord);
+  let hfspecialetekens = specialetekens.test(wachtwoord);
+  let zelfdeCheck = wachtwoord === bevestig;
 
   return (
     isminLengte && hfhooftletter && hfcijfer && hfspecialetekens && zelfdeCheck
@@ -64,7 +64,7 @@ function wachtwoordChecker() {
 }
 
 function wachtwoordvalidatie() {
-  const isValid = wachtwoordChecker();
+  let isValid = wachtwoordChecker();
   if (!isValid) {
     alert("Wachtword heeft niet alle eisen of wachtwoord is niet het zelfde");
     return false;
