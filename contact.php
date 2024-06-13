@@ -39,7 +39,7 @@
                         <h2 class="koptekts-bellen">Mailen</h2>
                         <p>
                             Maandag-Vrijdag:<br />
-                            9:00-21:00
+                            9:00-21:00F
                         </p>
                         <p>
                             Zaterdag: <br />
@@ -65,9 +65,9 @@
                         </h2>
                         <form action="" class="contact-formulier">
                             <input type="text" id="E-mail" placeholder="E-mailadres" />
-                            <input type="password" id="onderwerp" placeholder="Onderwerp" />
+                            <input type="text" id="onderwerp" placeholder="Onderwerp" />
                             <textarea name="" id="Bericht" placeholder="Bericht"></textarea>
-                            <input type="submit" id="bericht" value="Verzenden" />  
+                            <input type="submit" id="bericht" value="Verzenden" />
                         </form>
                     </div>
                 </div>
