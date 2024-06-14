@@ -17,7 +17,7 @@
         alt="achtergrond"
         id="inlog-achtergrond" />
       <div class="inlog-container">
-        <div id="inlog-form">
+        <div class="inlog-form">
           <img src="assets/img/logolos.png" alt="logolos" id="inlog-logo" />
           <h1>welkom bij mijn D&A</h1>
           <h2>
@@ -25,19 +25,22 @@
             te bewerken, je vakantie om te boeken en <br />
             reisdocumenten te downloaden.
           </h2>
-          <form action="" class="register-form">
+          <form action="" class="register-form" onsubmit="return inlogCheck()">
             <input type="text" id="email" placeholder="E-mailadres" />
+
             <input type="password" id="wachtwoord" placeholder="Wachtwoord" />
+            <div class="inloggen">
+              <input type="submit" id="versturen" value="Inloggen" />
+            </div>
           </form>
           <div class="wachtwoord-vergeten">
             <button><h3>Wachtword vergeten</h3></button>
           </div>
-          <div class="inloggen">
-            <input type="submit" id="versturen" value="Inloggen" />
-          </div>
           <div id="register-link">
             <a href="mijnd&aregister.php"
-              ><button>geen account? <span id="Creëer">Creëer een account</span></button></a
+              ><button>
+                geen account? <span id="Creëer">Creëer een account</span>
+              </button></a
             >
           </div>
         </div>

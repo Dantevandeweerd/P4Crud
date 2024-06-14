@@ -206,20 +206,22 @@ nav {
   padding-top: 25px;
   padding-bottom: 15px;
 }
-#inlog-form input {
+.inlog-form input, .register-blok input {
   width: 400px;
   height: 45px;
   box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-#inlog-form h2 {
+.inlog-form h2 {
   text-align: center;
   padding: 20px;
+
 }
 .wachtwoord-vergeten {
   display: flex;
   justify-content: flex-end;
   width: 80%;
+  padding-bottom: 20px;
 }
 .wachtwoord-vergeten button {
   color: blue;
@@ -228,7 +230,7 @@ nav {
   background-color: transparent;
 }
 
-#inlog-form {
+.inlog-form, .register-blok {
   width: 500px;
   height: 600px;
   background-color: white;
@@ -241,6 +243,10 @@ nav {
   border: solid 0.5px black;
   box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
 }
+.register-blok{
+  height: 600px;
+}
+
 .inlog-container {
   width: 100%;
   display: flex;
@@ -259,7 +265,16 @@ nav {
   justify-content: flex-end;
 }
 .inloggen {
-  padding: 20px 0 15px 0;
+  padding: 0px 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inloggen input, .register #versturen {
+  background-color: #B1F5AB;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
 }
 #Creëer {
   color: blue;
@@ -270,6 +285,7 @@ nav {
 .wachtwoord-info {
   display: flex;
   gap: 130px;
+  justify-content: center;
 }
 
 .register {
@@ -315,6 +331,7 @@ nav {
 
 .contact-pagina {
   display: flex;
+  justify-content: space-evenly;
 }
 #contact-form {
   width: 500px;
@@ -360,7 +377,7 @@ nav {
   padding: 15px;
 }
 .contact-formulier #bericht {
-  background-color: #B1F5AB;
+  background-color: #b1f5ab;
   width: 370px;
   height: 50px;
   border-radius: 5px;
