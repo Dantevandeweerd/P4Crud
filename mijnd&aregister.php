@@ -19,7 +19,7 @@
       <div class="register-blok">
         <img src="assets/img/logolos.png" alt="logolos" id="inlog-logo" />
         <h1>welkom bij mijn D&A</h1>
-        <h2>Vul onderstaande gegevens in.</h2>
+        <h2>Vul onderstaande gegevens in..</h2>
         <!-- Display error message -->
         <?php session_start(); ?>
         <?php if (isset($_SESSION['error'])): ?>
