@@ -63,12 +63,18 @@
                         <h2>
                             Vul onderstaande gegevens in.
                         </h2>
-                        <form action="" class="contact-formulier">
-                            <input type="text" id="E-mail" placeholder="E-mailadres" />
-                            <input type="text" id="onderwerp" placeholder="Onderwerp" />
-                            <textarea name="" id="Bericht" placeholder="Bericht"></textarea>
-                            <input type="submit" id="bericht" value="Verzenden" />
+                        <form action="database/review.php" class="contact-formulier" method="post">
+                            <input type="text" id="email" placeholder="E-mailadres" name="email" />
+                            <input type="text" id="onderwerp" placeholder="Onderwerp" name="onderwerp" />
+                            <textarea name="bericht" id="bericht" placeholder="Bericht" ></textarea>
+                            <input type="submit" id="verzenden" value="Verzenden" />
                         </form>
+                        <!-- <form action="database/review.php" class="contact-formulier" method="post">
+                            <input type="email" id="email" placeholder="E-mailadres" name="email" required />
+                            <input type="text" id="onderwerp" placeholder="Onderwerp" name="onderwerp" required />
+                            <textarea name="bericht" id="bericht" placeholder="Bericht" required></textarea>
+                            <input type="submit" value="Verzenden" />
+                        </form> -->
                     </div>
                 </div>
             </div>

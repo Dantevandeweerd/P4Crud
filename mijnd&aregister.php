@@ -20,7 +20,6 @@
         <img src="assets/img/logolos.png" alt="logolos" id="inlog-logo" />
         <h1>welkom bij mijn D&A</h1>
         <h2>Vul onderstaande gegevens in.</h2>
-        <!-- Display error message -->
         <?php session_start(); ?>
         <?php if (isset($_SESSION['error'])): ?>
           <div class="error">
@@ -28,7 +27,6 @@
             unset($_SESSION['error']); ?>
           </div>
         <?php endif; ?>
-        <!-- Form with onsubmit validation -->
         <form action="database/register.php" class="register-form" method="post"
           onsubmit="return wachtwoordvalidatie()">
           <input type="text" name="email" id="email" placeholder="E-mailadres" />
