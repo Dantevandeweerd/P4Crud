@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($user['admin'] == 1) {
             $_SESSION['admin'] = true;
             header("Location: admin.php");
+            test:
         }
     }
 }
